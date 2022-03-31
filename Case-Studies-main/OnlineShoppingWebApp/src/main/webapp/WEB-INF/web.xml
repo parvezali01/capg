@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+	<welcome-file-list>
+		<welcome-file>/</welcome-file>
+	</welcome-file-list>
+	<listener>
+		<listener-class>
+			org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+	</listener>
+	<context-param>
+		<param-name>
+			contextconfigLocation
+		</param-name>
+		<param-value>
+			/WEB-INF/applicationContext.xml
+		</param-value>
+	</context-param>
+	<servlet>
+		<servlet-name>
+			onlineshopping
+		</servlet-name>
+		<servlet-class>
+			org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>
+			onlineshopping
+		</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+</web-app>
